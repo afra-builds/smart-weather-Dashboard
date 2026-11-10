@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Weather Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Weather Dashboard</h1>
+        <p>Check weather across multiple cities</p>
+         <section>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn">Search</button>
+    </section>
+    <section id="weatherCard">
+        <div>
+        <h2 id="cityName"></h2>
+        <p id="temperature"></p>
+        <p id="weatherCondition"></p>
+        <p id="humidity"></p>
+        <p id="windSpeed"></p>
+    </div>
+    </section>
+    <p id="loading">Loading...</p>
+    <p id="error-message"></p>
+    <section >
+        <h3 class="section-title">Weather Across Cities</h3>
+    <div class="cities-container">
+        <div class="city-card">
+        <h3 class="city-name"></h3>
+        <p class="city-temp"></p>
+        <p class="city-condition"></p>
+        <p class="city-humidity"></p>
+       <p class="city-wind-speed"></p>
+       </div>
+        <div class="city-card">
+        <h3 class="city-name"></h3>
+        <p class="city-temp"></p>
+        <p class="city-condition"></p>
+        <p class="city-humidity"></p>
+       <p class="city-wind-speed"></p>
+       </div>
+       <div class="city-card">
+        <h3 class="city-name"></h3>
+        <p class="city-temp"></p>
+        <p class="city-condition"></p>
+        <p class="city-humidity"></p>
+       <p class="city-wind-speed"></p>
+       </div>
+    </div>
+    </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

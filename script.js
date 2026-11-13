@@ -116,8 +116,9 @@ async function getCityWeather(city) {
         const geoData = await geoResponse.json();
         const matchedCity = geoData.results?.find(result =>
             result.name.toLowerCase() === city.trim().toLowerCase() &&
-            ['PPLC', 'PPLA', 'PPLA2', 'PPLA3', 'PPLA4'].includes(result.feature_code)
+            result.country_code === 'PK'
         );
+        
         if (!matchedCity) {
         throw new Error('City not found. Please enter a valid city name.');
         }  
